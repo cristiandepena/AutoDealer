@@ -7,37 +7,37 @@ using System.Data;
 
 namespace BLL
 {
-    public class TipoTraccion
+    public class Modelo
     {
-        public int IdTipoTraccion { get; set; }
-        public string Descripcion { get; set; }
+        public int IdModelo { get; set; }
+        public string DetalleModelo { get; set; }
 
         public Conexion con;
         public string comando;
 
-        public TipoTraccion()
+        public Modelo()
         {
-            this.IdTipoTraccion = 0;
-            this.Descripcion = Descripcion;
+            this.IdModelo = 0;
+            this.DetalleModelo = DetalleModelo;
         }
 
         public bool insertar()
         {
-            comando = "insert into TipoTraccion (Descripcion) value('"+Descripcion+"')";
+            comando = "insert into Modelo (DetalleModelo) value('"+DetalleModelo+"')";
 
             return con.EjecutarDB(comando);
         }
 
         public bool modificar(int id)
         {
-            comando = "update TipoTraccion set Descripcion = '"+Descripcion+"' where IdTipoTraccion = " + id;
+            comando = "update Modelo set DetalleModelo = '" + DetalleModelo + "' where IdModelo =" + id;
 
             return con.EjecutarDB(comando);
         }
 
         public bool eliminar(int id)
         {
-            comando = "delete from TipoTraccion where IdTipoTraccion = " + id;
+            comando = "delete from Modelo where IdModelo = " + id;
 
             return con.EjecutarDB(comando);
         }
@@ -46,7 +46,7 @@ namespace BLL
         {
             DataTable dt;
 
-            comando = "select * from TipoTraccion";
+            comando = "select * from Modelos";
 
             bool msj = false;
 
@@ -56,8 +56,8 @@ namespace BLL
             {
                 msj = true;
 
-                this.IdTipoTraccion = (int)dt.Rows[0]["IdTipoTraccion"];
-                this.Descripcion = dt.Rows[0]["Descripcion"].ToString();
+                this.IdModelo = (int)dt.Rows[0]["IdModelo"];
+                this.DetalleModelo = dt.Rows[0]["DetalleModelo"].ToString();
             }
 
             return msj;

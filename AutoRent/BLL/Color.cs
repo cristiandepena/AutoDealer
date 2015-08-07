@@ -42,7 +42,7 @@ namespace BLL
             return con.EjecutarDB(comando);
         }
 
-        public bool Buscar()
+        public bool Listar()
         {
             DataTable dt;
 

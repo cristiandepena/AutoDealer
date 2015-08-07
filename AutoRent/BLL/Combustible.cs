@@ -7,37 +7,37 @@ using System.Data;
 
 namespace BLL
 {
-    public class TipoTraccion
+    public class Combustible
     {
-        public int IdTipoTraccion { get; set; }
+        public int IdCombustible { get; set; }
         public string Descripcion { get; set; }
 
         public Conexion con;
         public string comando;
 
-        public TipoTraccion()
+        public Combustible()
         {
-            this.IdTipoTraccion = 0;
+            this.IdCombustible = 0;
             this.Descripcion = Descripcion;
         }
 
         public bool insertar()
         {
-            comando = "insert into TipoTraccion (Descripcion) value('"+Descripcion+"')";
+            comando = "insert into Combustibles (Descripcion) value('"+Descripcion+"')";
 
             return con.EjecutarDB(comando);
         }
 
         public bool modificar(int id)
         {
-            comando = "update TipoTraccion set Descripcion = '"+Descripcion+"' where IdTipoTraccion = " + id;
+            comando = "update Combustibles set Descripcion = '" + Descripcion + "' where IdCombustible =" + id;
 
             return con.EjecutarDB(comando);
         }
 
         public bool eliminar(int id)
         {
-            comando = "delete from TipoTraccion where IdTipoTraccion = " + id;
+            comando = "delete from Combustibles where IdCombustible = " + id;
 
             return con.EjecutarDB(comando);
         }
@@ -46,7 +46,7 @@ namespace BLL
         {
             DataTable dt;
 
-            comando = "select * from TipoTraccion";
+            comando = "select * from Combustibles";
 
             bool msj = false;
 
@@ -56,11 +56,12 @@ namespace BLL
             {
                 msj = true;
 
-                this.IdTipoTraccion = (int)dt.Rows[0]["IdTipoTraccion"];
+                this.IdCombustible = (int)dt.Rows[0]["IdCombustible"];
                 this.Descripcion = dt.Rows[0]["Descripcion"].ToString();
             }
 
             return msj;
         }
+
     }
 }

@@ -49,6 +49,8 @@
   <ItemGroup>
     <Compile Include="Ciudad.cs" />
     <Compile Include="Color.cs" />
+    <Compile Include="Combustible.cs" />
+    <Compile Include="Modelo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TipoTraccion.cs" />
     <Compile Include="TipoVehiculo.cs" />
