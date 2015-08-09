@@ -66,11 +66,28 @@
     <Content Include="Bootstrap3.3.5\js\bootstrap.min.js" />
     <Content Include="Bootstrap3.3.5\js\jquery-1.11.3.min.js" />
     <Content Include="Bootstrap3.3.5\js\npm.js" />
+    <Content Include="ControlPanel\Login.aspx" />
     <Content Include="ControlPanel\rTransmision.aspx" />
     <Content Include="ControlPanel\rVehiculos.aspx" />
+    <Content Include="Default.aspx" />
+    <Content Include="rCuenta.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ControlPanel\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlPanel\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Master.Master.cs">
       <DependentUpon>Master.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -92,6 +109,13 @@
     </Compile>
     <Compile Include="ControlPanel\rVehiculos.aspx.designer.cs">
       <DependentUpon>rVehiculos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="rCuenta.aspx.cs">
+      <DependentUpon>rCuenta.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="rCuenta.aspx.designer.cs">
+      <DependentUpon>rCuenta.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -126,6 +150,9 @@
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
@@ -143,6 +170,9 @@
           <CustomServerUrl>
           </CustomServerUrl>
           <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+          <servers defaultServer="SelfHostServer">
+            <server name="SelfHostServer" exePath="" cmdArgs="" url="http://localhost:49865/" workingDir="" />
+          </servers>
         </WebProjectProperties>
       </FlavorProperties>
     </VisualStudio>

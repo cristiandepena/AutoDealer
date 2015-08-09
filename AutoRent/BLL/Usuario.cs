@@ -70,30 +70,21 @@ namespace BLL
             return con.EjecutarDB(comando); 
         }
 
-        public bool Buscar(int id)
+        public bool Buscar(string usuario, string contrasena)
         {
             DataTable dt;
 
             bool msj = false;
 
-            comando = "select * from Usuarios where IdUsuario = " + id;
+            comando = "select NombreUsuario, Contrasena from Usuarios where NombreUsuario = '"+usuario+"', "
+                +"Contrasena = '"+contrasena+"'";
 
             dt = con.BuscarDb(comando);
 
             if (dt.Rows.Count > 0)
             {
-                this.IdUsuario = (int)dt.Rows[0]["IdUsuario"];
                 this.NombreUsuario = dt.Rows[0]["NombreUsuario"].ToString();
                 this.Contrasena = dt.Rows[0]["Contrasena"].ToString();
-                this.Nombre = dt.Rows[0]["Nombre"].ToString();
-                this.Apellido = dt.Rows[0]["Apellido"].ToString();
-                this.Cedula = dt.Rows[0]["Cedula"].ToString();
-                this.Direccion = dt.Rows[0]["Direccion"].ToString();
-                this.Correo = dt.Rows[0]["Correo"].ToString();
-                this.Telefono = dt.Rows[0]["Telefono"].ToString();
-                this.IdCiudad = (int)dt.Rows[0]["IdCiudad"];
-                this.FechaNacimiento = (DateTime)dt.Rows[0]["FechaNacimiento"];
-                this.Activo = (bool)dt.Rows[0]["Activo"];
 
                 msj = true;
             }
