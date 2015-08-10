@@ -76,7 +76,7 @@ namespace BLL
 
             bool msj = false;
 
-            comando = "select NombreUsuario, Contrasena from Usuarios where NombreUsuario = '"+usuario+"', "
+            comando = "select NombreUsuario, Contrasena from Usuarios where NombreUsuario = '"+usuario+"' and "
                 +"Contrasena = '"+contrasena+"'";
 
             dt = con.BuscarDb(comando);

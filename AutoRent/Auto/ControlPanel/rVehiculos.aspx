@@ -1,46 +1,80 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="rVehiculos.aspx.cs" Inherits="AutoRent.WebForm1" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="rVehiculos.aspx.cs" Inherits="AutoRent.WebForm1" MasterPageFile="~/Master.Master" %>
 
-<!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title></title>
-</head>
-<body>
-    <h1 style="text-align:center">Busqueda de Vehiculos</h1>
+<asp:Content ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <form id="form1" runat="server">
-        <label>Condicion:</label><asp:DropDownList ID="DropDownList1" runat="server">
-        </asp:DropDownList>
-        <br />
-
-        <label>Marca</label>
-        &nbsp;<asp:DropDownList ID="DropDownList2" runat="server">
-        </asp:DropDownList>
-        <br />
-        <label>Modelo </label>
-        <asp:DropDownList ID="DropDownList3" runat="server">
-        </asp:DropDownList>
-        <br />
-        <label>Transmision</label>
-        <asp:DropDownList ID="DropDownList4" runat="server"></asp:DropDownList>
-        <br />
-        <label>Tipo de traccion</label>
-        <asp:DropDownList ID="DropDownList5" runat="server"></asp:DropDownList>
-        <br />
-        <label>Tipo de vehiculo</label>
-        <asp:DropDownList ID="DropDownList6" runat="server"></asp:DropDownList>
-        <br />
-        <label>Año de fabricacion</label>
-        <asp:DropDownList ID="DropDownList7" runat="server"></asp:DropDownList>
-        <br />
-        <label>Tipo de combustible</label>
-        <asp:DropDownList ID="DropDownList8" runat="server"></asp:DropDownList>
-        <br />
-        <label>Color</label>
-        <asp:DropDownList ID="DropDownList9" runat="server"></asp:DropDownList>
-
-        &nbsp;<div>
+        <div>
+            <table>
+                <tr>
+                    <th>Id</th>
+                    <td>
+                        <asp:TextBox ID="tbId" runat="server"></asp:TextBox>
+                        <asp:Button ID="btnBuscar" runat="server" Text="Buscar" />
+                    </td>
+                </tr>
+                <tr>
+                    <th>Descripcion</th>
+                    <td>
+                        <asp:TextBox ID="tbDescripcion" runat="server" TextMode="MultiLine"></asp:TextBox>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Color</th>
+                    <td>
+                        <asp:Label ID="lbPrimario" runat="server" Text="Primario"></asp:Label>
+                        <asp:DropDownList ID="ddlColorPrimario" runat="server"></asp:DropDownList>
+                        <asp:Label ID="lbSecundario" runat="server" Text="Secundario"></asp:Label>
+                        <asp:DropDownList ID="ddlColorSecundario" runat="server"></asp:DropDownList>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Marca</th>
+                    <td>
+                        <asp:DropDownList ID="ddlMarca" runat="server"></asp:DropDownList>
+                        <asp:Label ID="Label1" runat="server" Text="Modelo"></asp:Label>
+                        <asp:DropDownList ID="ddlModelo" runat="server"></asp:DropDownList>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Tipo de Transmision</th>
+                    <td>
+                        <asp:DropDownList ID="ddlTipoTransmision" runat="server"></asp:DropDownList>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Traccion</th>
+                    <td>
+                        <asp:DropDownList ID="ddlTraccion" runat="server"></asp:DropDownList>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Tipo de vehiculo</th>
+                    <td>
+                        <asp:DropDownList ID="ddlTipoVehiculo" runat="server"></asp:DropDownList>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Ano de fabricacion</th>
+                    <td>
+                        <asp:DropDownList ID="ddlAnioFabricacion" runat="server"></asp:DropDownList>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Precio</th>
+                    <td>
+                        <asp:TextBox ID="tbPrecio" runat="server"></asp:TextBox>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Tipo de combustible</th>
+                    <td>
+                        <asp:DropDownList ID="ddlCombustible" runat="server"></asp:DropDownList>
+                    </td>
+                </tr>
+            </table>
+            <p>
+                <asp:Label ID="Msg" runat="server" Text=""></asp:Label>
+            </p>
+            <asp:Button ID="Button2" class="btn btn-success" runat="server" Text="Registrar Vehiculo" />
         </div>
     </form>
-</body>
-</html>
+</asp:Content>

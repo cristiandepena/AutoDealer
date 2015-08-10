@@ -32,6 +32,10 @@ namespace Auto.ControlPanel
                 FormsAuthentication.RedirectFromLoginPage(usuario, Persist.Checked);
 
             }
+            else
+            {
+                Msg.Text = "Datos incorrectos";
+            }
         }
     }
 }

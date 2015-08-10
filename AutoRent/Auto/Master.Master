@@ -16,62 +16,84 @@
 </head>
 <body>
     <nav class="navbar navbar-default">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="/Default.aspx">AutoRent</a>
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
-            <ul class="nav navbar-nav">
-            <li><a href="#">Inicio</a></li>
-            <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dealers populares <span class="caret"></span></a>
-                <ul class="dropdown-menu" role="menu">
-                    <li><a href="/ControlPanel/rTransmision.aspx">Transmision</a></li>
-                    <li><a></a></li>
-                </ul>
-            </li>
-            <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Sobre nosotros <span class="caret"></span></a>
-                <ul class="dropdown-menu" role="menu">
-                    <li><a href="#">Servicios</a></li>
-                    <li><a href="#">Politicas</a></li>
-                </ul>
-            </li>
-            <li><a href="#contact">Contacto</a></li>
-          </ul>
-          <form class="navbar-form navbar-right">
-            <div class="form-group">
-                <a href="/ControlPanel/Login.aspx">Iniciar Sesion</a>
-                <asp:LoginName ID="LoginName" FormatString ="Bienvenido, {0}" runat="server" />   
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/Default.aspx">AutoRent</a>
             </div>
-          </form>
-        </div><!--/.navbar-collapse -->
-      </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="#">Inicio</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dealers populares <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="/ControlPanel/rTransmision.aspx">Transmision</a></li>
+                            <li><a></a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Sobre nosotros <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">Servicios</a></li>
+                            <li><a href="#">Politicas</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#contact">Contacto</a></li>
+                </ul>
+                <form class="navbar-form navbar-right">
+                    <div class="form-group">
+                        <!-- Trigger the modal with a button -->
+                        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Inicia Sesion</button>
+                        <!-- Modal -->
+                        <div id="myModal" class="modal fade" role="dialog">
+                            <div class="modal-dialog">
+
+                                <!-- Modal content-->
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        <h4 class="modal-title">Modal Header</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>Some text in the modal.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <asp:LoginName ID="LoginName" FormatString="Bienvenido, {0}" runat="server" />
+                    </div>
+                </form>
+            </div>
+            <!--/.navbar-collapse -->
+        </div>
     </nav>
     <div class="container">
-     
+
         <div class="row">
             <div class="col-lg-12">
 
-        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-        
-        </asp:ContentPlaceHolder>
-    </div>
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
             </div>
-            
+        </div>
 
-      <hr>
 
-      <footer>
-        <p>CDP Web Design & Development Group&copy; </p>
-      </footer>
-    </div> <!-- /container -->
+        <hr>
+
+        <footer>
+            <p>CDP Web Design & Development Group&copy; </p>
+        </footer>
+    </div>
+    <!-- /container -->
     <script src="Bootstrap3.3.5/js/jquery-1.11.3.min.js"></script>
     <script src="Bootstrap3.3.5/js/bootstrap.min.js"></script>
     <script src="Bootstrap3.3.5/js/npm.js"></script>
