@@ -43,7 +43,7 @@ namespace AutoRent
             }
             else
             {
-                Msg.Text = "You have not specified a file.";
+                Msg.Text = "No ha especificado ningun archivo.";
             }
             return msj;
         }

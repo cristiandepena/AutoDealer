@@ -13,6 +13,7 @@
             <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="Este campo no puede estar vacio.." ForeColor="Red" ControlToValidate="tbContrasena"></asp:RequiredFieldValidator>
             
         </div>
+        <a href="../rCuenta.aspx">Registrarme!</a>
         <asp:CheckBox ID="Persist" runat="server" Checked="True" Text="Recordarme"/>
         <asp:Button ID="btnAceptar" class="btn btn-success" runat="server" Text="Iniciar Sesion" OnClick="btnAceptar_Click" />
         <asp:Label ID="Msg" runat="server" Text=""></asp:Label>
