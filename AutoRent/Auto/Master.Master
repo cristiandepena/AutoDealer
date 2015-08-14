@@ -28,20 +28,20 @@
             </div>
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li><a href="#">Inicio</a></li>
+                    <li><a href="/Default.aspx">Inicio</a></li>
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dealers populares <span class="caret"></span></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Registros<span class="caret"></span></a>
                         <ul class="dropdown-menu" role="menu">
-                            <li><a href="/ControlPanel/rTransmision.aspx">Transmision</a></li>
+                            <li><a href="ControlPanel/rMarcaModelo.aspx">Marcas y Modelos</a></li>
+                            <li><a href="/ControlPanel/rColor.aspx">Colores</a></li>
+                            <li><a href="/ControlPanel/rTipoVehiculo.aspx">Tipos de Vehiculos</a></li>
+                            <li><a href="/ControlPanel/rTransmision.aspx">Tipos de Transmisiones</a></li>
+                            <li><a href="/ControlPanel/rTraccion.aspx">Tipos de Tracciones</a></li>
                             <li><a></a></li>
                         </ul>
                     </li>
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Sobre nosotros <span class="caret"></span></a>
-                        <ul class="dropdown-menu" role="menu">
-                            <li><a href="#">Servicios</a></li>
-                            <li><a href="#">Politicas</a></li>
-                        </ul>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Consultas<span class="caret"></span></a>
                     </li>
                     <li><a href="#contact">Contacto</a></li>
                 </ul>
@@ -83,6 +83,7 @@
 
                 <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
                 </asp:ContentPlaceHolder>
+
             </div>
         </div>
 

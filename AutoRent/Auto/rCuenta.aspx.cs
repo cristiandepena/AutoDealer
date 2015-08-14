@@ -10,24 +10,43 @@ namespace Auto
 {
     public partial class rCuenta : System.Web.UI.Page
     {
-        public Usuario usu = new Usuario();
+        public Usuario usu;
+        public Ciudad ciudad;
 
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)
             {
+                ciudad = new Ciudad();
+
+                ddlCiudad.DataSource = ciudad.Listar("Select IdCiudad, Descripcion from Ciudades");
+                ddlCiudad.DataTextField = "Descripcion";
+                ddlCiudad.DataValueField = "IdCiudad";
+                ddlCiudad.DataBind();
             }
         }
 
         protected void btnAceptar_Click(object sender, EventArgs e)
         {
-            if (tbContrasena.Text.Equals(tbConfirmacion.Text))
+            usu = new Usuario();
+            
+            int idciudad = 0;
+            int.TryParse(ddlCiudad.SelectedValue, out idciudad);
+
+            usu.NombreUsuario = tbNombreUsuario.Text;
+            usu.Contrasena = tbContrasena.Text;
+            usu.Nombre = tbNombre.Text;
+            usu.Apellido = tbApellido.Text;
+            usu.FechaNacimiento = tbFechaNacimiento.Text;
+            usu.Cedula = tbCedula.Text;
+            usu.Telefono = tbTelefono.Text;
+            usu.IdCiudad = idciudad;
+            usu.Direccion = tbDireccion.Text;
+            usu.Correo = tbCorreo.Text;
+
+            if (usu.insertar())
             {
-                usu.insertar();
-            }
-            else
-            {
-                Msg.Text = "Las contrasenas no coinciden...";
+                Msg.Text = "Se ha registrado exitosamente!";
             }
         }
     }

@@ -12,7 +12,7 @@ namespace BLL
         public int IdCombustible { get; set; }
         public string Descripcion { get; set; }
 
-        public Conexion con;
+        public Conexion con = new Conexion();
         public string comando;
 
         public Combustible()
@@ -23,7 +23,7 @@ namespace BLL
 
         public bool insertar()
         {
-            comando = "insert into Combustibles (Descripcion) value('"+Descripcion+"')";
+            comando = "insert into Combustibles (Descripcion) values('"+Descripcion+"')";
 
             return con.EjecutarDB(comando);
         }

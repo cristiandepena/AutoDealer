@@ -18,7 +18,7 @@ namespace BLL
         public string Direccion { get; set; }
         public string Correo { get; set; }
         public string Telefono { get; set; }
-        public DateTime FechaNacimiento { get; set; }
+        public string FechaNacimiento { get; set; }
         public int IdCiudad { get; set; }
         public DateTime FechaIngreso { get; set; }
         public bool Activo;
@@ -37,7 +37,7 @@ namespace BLL
             this.Direccion = Direccion;
             this.Correo = Correo;
             this.Telefono = Telefono;
-            this.FechaNacimiento = FechaNacimiento.Date;
+            this.FechaNacimiento = FechaNacimiento;
             this.IdCiudad = 0;
             this.FechaIngreso = DateTime.Now;
             this.Activo = true;
@@ -48,7 +48,7 @@ namespace BLL
             comando = "insert into Usuarios (NombreUsuario, Contrasena, Nombre, Apellido, Cedula, Direccion, Correo,"
             +"Telefono, FechaNacimiento, IdCiudad, FechaIngreso, Activo) values ( '"+this.NombreUsuario+"', "
             +"'"+this.Contrasena+"', '"+this.Nombre+"', '"+this.Apellido+"', '"+this.Cedula+"', '"+this.Telefono+"'," 
-            +"'"+this.Direccion+"', '"+this.Correo+"', '"+this.FechaNacimiento.ToString("dd/MM/yyyy")+"', '"+this.IdCiudad+"'," 
+            +"'"+this.Direccion+"', '"+this.Correo+"', '"+this.FechaNacimiento+"', '"+this.IdCiudad+"'," 
             +"'"+this.FechaIngreso+"', '"+this.Activo+"')";
 
             return con.EjecutarDB(comando); 
@@ -58,7 +58,7 @@ namespace BLL
 
             comando = "update Usuarios set Contrasena = '"+this.Contrasena+"', Nombre = '"+this.Nombre+"'," 
             +"Apellido = '"+this.Apellido+"', Cedula = '"+this.Cedula+"', Direccion = '"+this.Direccion+"'," 
-            +"Telefono = '"+this.Telefono+"', FechaNacimiento = '"+this.FechaNacimiento.ToString("dd/MM/yyyy")+"'," 
+            +"Telefono = '"+this.Telefono+"', FechaNacimiento = '"+this.FechaNacimiento+"'," 
             +"IdCiudad = '"+this.IdCiudad+"', Activo = '"+this.Activo+"' where IdUsuario = " +id;
             
             return con.EjecutarDB(comando); 

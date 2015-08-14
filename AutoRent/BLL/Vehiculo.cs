@@ -10,6 +10,7 @@ namespace BLL
     public class Vehiculo
     {
         public int IdVehiculo { get; set; }
+        public string Descripcion { get; set; }
         public int IdCondicion { get; set; }
         public int IdMarca { get; set; }
         public int IdModelo {get; set;}
@@ -25,10 +26,12 @@ namespace BLL
 
         public Conexion con;
         public string comando;
+        public List<Imagen> imagenes { get; set; }
 
         public Vehiculo()
         {
             this.IdVehiculo = 0;
+            this.Descripcion = Descripcion;
             this.IdCondicion = 0;
             this.IdMarca = 0;
             this.IdModelo = 0;
@@ -42,23 +45,28 @@ namespace BLL
             this.IdUsuario = 0;
             this.Activo = true;
             con = new Conexion();
+            imagenes = new List<Imagen>();
         }
 
         public bool insertar()
         {
    
-            comando = "insert into Vehiculos (IdCondicion, IdMarca, IdModelo, IdTransmision, IdTipoTraccion,"
+            comando = "insert into Vehiculos (Descripcion, IdCondicion, IdMarca, IdModelo, IdTransmision, IdTipoTraccion,"
             +"IdTipoVehiculo, AnoFabricacion, Precio, IdCombustible, IdColor, IdUsuario, Activo) values"
-            + "('" + IdCondicion + "',  '" + IdMarca + "', '" + IdModelo + "', '" + IdTransmision + "',"
+            + "('" + Descripcion + "', '" + IdCondicion + "',  '" + IdMarca + "', '" + IdModelo + "', '" + IdTransmision + "',"
             + "'" + IdTipoTraccion + "', '" + IdTipoVehiculo + "', '" + AnoFabricacion + "', '" + Precio + "',"
             + "'" + IdCombustible + "', '" + IdColor + "', '" + IdUsuario + "', '" + Activo + "')";
 
+            foreach (Imagen img in imagenes)
+            {
+                comando += "insert into Vehiculos_Imagenes (IdVehiculo, RutaFoto) values((select max(IdVehiculo) as IdVehiculo from Vehiculos), '"+img.rutaFoto+"')";
+            }
             return con.EjecutarDB(comando);
         }
 
         public bool modificar(int id)
         {
-            comando = "update Vehiculos set IdCondicion = '" + IdCondicion + "', IdMarca = '" + IdMarca + "', IdModelo = '" + IdModelo + "',"
+            comando = "update Vehiculos set Descripcion = '"+ Descripcion+"', IdCondicion = '" + IdCondicion + "', IdMarca = '" + IdMarca + "', IdModelo = '" + IdModelo + "',"
             + "IdTransmision = '" + IdTransmision + "', IdTipoTraccion = '" + IdTipoTraccion + "', IdTipoVehiculo = '" + IdTipoVehiculo + "',"
             + "AnoFabricacion = '" + AnoFabricacion + "', Precio = '" + Precio + "', IdCombustible = '" + IdCombustible + "', IdColor = '" + IdColor + "',"
             + "IdUsuario = '" + IdUsuario + "', Activo = '" + Activo + "' where IdVehiculo = " + id;
@@ -68,7 +76,7 @@ namespace BLL
 
         public bool eliminar(int id)
         {
-            comando = "delete * Vehiculos where IdVehiculo = " + id;
+            comando = "delete from Vehiculos where IdVehiculo = " + id;
 
             return con.EjecutarDB(comando);
         }
@@ -88,6 +96,7 @@ namespace BLL
                 msj = true;
 
                 this.IdVehiculo = (int)dt.Rows[0]["IdVehiculo"];
+                this.Descripcion = dt.Rows[0]["Descripcion"].ToString();
                 this.IdCondicion = (int)dt.Rows[0]["IdCondicion"];
                 this.IdMarca = (int)dt.Rows[0]["IdMarca"];
                 this.IdModelo = (int)dt.Rows[0]["IdModelo"];

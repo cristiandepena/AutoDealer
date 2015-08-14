@@ -12,7 +12,7 @@ namespace BLL
         public int IdCiudad { get; set; }
         public string NombreCiudad { get; set; }
 
-        public Conexion con;
+        public Conexion con = new Conexion();
         public string comando;
 
         public Ciudad()
@@ -23,21 +23,21 @@ namespace BLL
 
         public bool insertar()
         {
-            comando = "insert into Ciudades (NombreCiudad) values('"+NombreCiudad+"')";
+            comando = "insert into Ciudades (Descripcion) values('"+NombreCiudad+"')";
 
             return con.EjecutarDB(comando);
         }
 
         public bool modificar(int id)
         {
-            comando = "update Ciudades set NombreCiudad = '"+NombreCiudad+"' where IdCiudad = " +id;
+            comando = "update Ciudades set Descripcion = '"+NombreCiudad+"' where IdCiudad = " +id;
 
             return con.EjecutarDB(comando);
         }
 
         public bool eliminar(int id)
         {
-            comando = "delete Ciudades where IdCiudad = " +id;
+            comando = "delete from Ciudades where IdCiudad = " +id;
 
             return con.EjecutarDB(comando);
 
@@ -58,15 +58,15 @@ namespace BLL
                 msj = true;
 
                 this.IdCiudad = (int)dt.Rows[0]["IdCiudad"];
-                this.NombreCiudad = dt.Rows[0]["NombreCiudad"].ToString();
+                this.NombreCiudad = dt.Rows[0]["Descripcion"].ToString();
             }
 
             return msj;
         }
 
-        public DataTable Listar() 
+        public DataTable Listar(string sql) 
         {
-            comando = "select NombreCiudad from Ciudades";
+            comando = sql;
 
             return con.BuscarDb(comando);
         }

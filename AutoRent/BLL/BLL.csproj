@@ -50,6 +50,7 @@
     <Compile Include="Ciudad.cs" />
     <Compile Include="Color.cs" />
     <Compile Include="Combustible.cs" />
+    <Compile Include="Imagen.cs" />
     <Compile Include="Marca.cs" />
     <Compile Include="Modelo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

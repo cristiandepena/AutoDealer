@@ -8,13 +8,19 @@
                     <th>Id</th>
                     <td>
                         <asp:TextBox ID="tbId" runat="server"></asp:TextBox>
-                        <asp:Button ID="btnBuscar" runat="server" Text="Buscar" />
+                        <asp:Button ID="btnBuscar" runat="server" Text="Buscar" OnClick="btnBuscar_Click" />
                     </td>
                 </tr>
                 <tr>
                     <th>Descripcion</th>
                     <td>
                         <asp:TextBox ID="tbDescripcion" runat="server" TextMode="MultiLine"></asp:TextBox>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Imagen</th>
+                    <td>
+                        <asp:FileUpload ID="fuImagen" runat="server" />
                     </td>
                 </tr>
                 <tr>
@@ -74,7 +80,7 @@
             <p>
                 <asp:Label ID="Msg" runat="server" Text=""></asp:Label>
             </p>
-            <asp:Button ID="Button2" class="btn btn-success" runat="server" Text="Registrar Vehiculo" />
+            <asp:Button ID="btnRegistrar" class="btn btn-success" runat="server" Text="Registrar Vehiculo" OnClick="btnRegistrar_Click" />
         </div>
     </form>
 </asp:Content>
