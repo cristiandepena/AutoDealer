@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>C:\Users\usuario\Desktop\Website Somee</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/Auto.dll">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="bin/BLL.dll">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="bin/DAL.dll">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Bootstrap3.3.5/css/bootstrap-theme.css">
+      <publishTime>06/08/2015 09:10:06</publishTime>
+    </File>
+    <File Include="Bootstrap3.3.5/css/bootstrap-theme.css.map">
+      <publishTime>06/08/2015 09:10:06</publishTime>
+    </File>
+    <File Include="Bootstrap3.3.5/css/bootstrap-theme.min.css">
+      <publishTime>06/08/2015 09:10:06</publishTime>
+    </File>
+    <File Include="Bootstrap3.3.5/css/bootstrap.css">
+      <publishTime>06/08/2015 09:10:06</publishTime>
+    </File>
+    <File Include="Bootstrap3.3.5/css/bootstrap.css.map">
+      <publishTime>06/08/2015 09:10:06</publishTime>
+    </File>
+    <File Include="Bootstrap3.3.5/css/bootstrap.min.css">
+      <publishTime>06/08/2015 09:10:06</publishTime>
+    </File>
+    <File Include="Bootstrap3.3.5/fonts/glyphicons-halflings-regular.eot">
+      <publishTime>06/08/2015 09:10:40</publishTime>
+    </File>
+    <File Include="Bootstrap3.3.5/fonts/glyphicons-halflings-regular.svg">
+      <publishTime>06/08/2015 09:10:40</publishTime>
+    </File>
+    <File Include="Bootstrap3.3.5/fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>06/08/2015 09:10:40</publishTime>
+    </File>
+    <File Include="Bootstrap3.3.5/fonts/glyphicons-halflings-regular.woff">
+      <publishTime>06/08/2015 09:10:40</publishTime>
+    </File>
+    <File Include="Bootstrap3.3.5/fonts/glyphicons-halflings-regular.woff2">
+      <publishTime>06/08/2015 09:10:40</publishTime>
+    </File>
+    <File Include="Bootstrap3.3.5/js/bootstrap.js">
+      <publishTime>06/08/2015 09:10:15</publishTime>
+    </File>
+    <File Include="Bootstrap3.3.5/js/bootstrap.min.js">
+      <publishTime>06/08/2015 09:10:15</publishTime>
+    </File>
+    <File Include="Bootstrap3.3.5/js/jquery-1.11.3.min.js">
+      <publishTime>06/08/2015 09:16:34</publishTime>
+    </File>
+    <File Include="Bootstrap3.3.5/js/npm.js">
+      <publishTime>06/08/2015 09:10:15</publishTime>
+    </File>
+    <File Include="ControlPanel/Login.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="ControlPanel/rColor.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="ControlPanel/rCombustibles.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="ControlPanel/rMarcaModelo.aspx">
+      <publishTime>12/08/2015 21:49:29</publishTime>
+    </File>
+    <File Include="ControlPanel/rModelo.aspx">
+      <publishTime>08/18/2015 15:07:13</publishTime>
+    </File>
+    <File Include="ControlPanel/rTipoVehiculo.aspx">
+      <publishTime>12/08/2015 21:35:57</publishTime>
+    </File>
+    <File Include="ControlPanel/rTraccion.aspx">
+      <publishTime>12/08/2015 21:55:50</publishTime>
+    </File>
+    <File Include="ControlPanel/rTransmision.aspx">
+      <publishTime>06/08/2015 09:34:51</publishTime>
+    </File>
+    <File Include="ControlPanel/rVehiculos.aspx">
+      <publishTime>12/08/2015 02:23:28</publishTime>
+    </File>
+    <File Include="Default.aspx">
+      <publishTime>09/08/2015 14:36:23</publishTime>
+    </File>
+    <File Include="Master.Master">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="rCuenta.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

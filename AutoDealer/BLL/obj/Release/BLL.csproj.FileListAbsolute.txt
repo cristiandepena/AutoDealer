@@ -1,0 +1,9 @@
+C:\Users\usuario\documents\visual studio 2013\Projects\AutoRent\BLL\bin\Release\BLL.dll
+C:\Users\usuario\documents\visual studio 2013\Projects\AutoRent\BLL\bin\Release\BLL.pdb
+C:\Users\usuario\documents\visual studio 2013\Projects\AutoRent\BLL\bin\Release\DAL.dll
+C:\Users\usuario\documents\visual studio 2013\Projects\AutoRent\BLL\bin\Release\DAL.pdb
+C:\Users\usuario\documents\visual studio 2013\Projects\AutoRent\BLL\obj\Release\BLL.csprojResolveAssemblyReference.cache
+C:\Users\usuario\documents\visual studio 2013\Projects\AutoRent\BLL\obj\Release\BLL.Properties.Resources.resources
+C:\Users\usuario\documents\visual studio 2013\Projects\AutoRent\BLL\obj\Release\BLL.csproj.GenerateResource.Cache
+C:\Users\usuario\documents\visual studio 2013\Projects\AutoRent\BLL\obj\Release\BLL.dll
+C:\Users\usuario\documents\visual studio 2013\Projects\AutoRent\BLL\obj\Release\BLL.pdb

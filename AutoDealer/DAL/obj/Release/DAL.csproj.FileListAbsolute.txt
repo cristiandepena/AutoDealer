@@ -1,0 +1,7 @@
+C:\Users\usuario\documents\visual studio 2013\Projects\AutoRent\DAL\bin\Release\DAL.dll
+C:\Users\usuario\documents\visual studio 2013\Projects\AutoRent\DAL\bin\Release\DAL.pdb
+C:\Users\usuario\documents\visual studio 2013\Projects\AutoRent\DAL\obj\Release\DAL.csprojResolveAssemblyReference.cache
+C:\Users\usuario\documents\visual studio 2013\Projects\AutoRent\DAL\obj\Release\DAL.Properties.Resources.resources
+C:\Users\usuario\documents\visual studio 2013\Projects\AutoRent\DAL\obj\Release\DAL.csproj.GenerateResource.Cache
+C:\Users\usuario\documents\visual studio 2013\Projects\AutoRent\DAL\obj\Release\DAL.dll
+C:\Users\usuario\documents\visual studio 2013\Projects\AutoRent\DAL\obj\Release\DAL.pdb
