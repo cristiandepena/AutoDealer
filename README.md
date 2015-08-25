@@ -18,6 +18,7 @@ con el esquema de desarrollo en N-Capas.
 Tecnologias usadas:
 
 <ul>
+ <li>Html5 & CSS 3</li>
  <li>Javascript</li>
  <li>jQuery</li>
  <li>Toastr</li>
