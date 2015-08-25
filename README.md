@@ -8,7 +8,7 @@ La idea es crear una aplicacion web que permita a los usuarios las siguientes fu
   <li>-Consultar vehiculos</li>
   <li>-Eliminar vehiculos que ellos mismos hayan registrado</li>
   <li>-Modificar vehiculos que ellos mismos hayan registrado</li>
-  <li>-Contactar otros dealers/usuarios</li>
+  <li>-Contactar otros dealers</li>
   <li>-Agregar vehiculos a sus favoritos</li>
 </ul>
 
