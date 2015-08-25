@@ -16,7 +16,7 @@ namespace AutoDealer.ControlPanel {
         /// form1 control.
         /// </summary>
         /// <remarks>
-        /// AutoDealer-generated field.
+        /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
@@ -25,7 +25,7 @@ namespace AutoDealer.ControlPanel {
         /// tbId control.
         /// </summary>
         /// <remarks>
-        /// AutoDealer-generated field.
+        /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox tbId;
@@ -34,34 +34,34 @@ namespace AutoDealer.ControlPanel {
         /// btnBuscar control.
         /// </summary>
         /// <remarks>
-        /// AutoDealer-generated field.
+        /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnBuscar;
         
         /// <summary>
-        /// lbModelo control.
-        /// </summary>
-        /// <remarks>
-        /// AutoDealer-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbModelo;
-        
-        /// <summary>
         /// tbDescripcion control.
         /// </summary>
         /// <remarks>
-        /// AutoDealer-generated field.
+        /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox tbDescripcion;
         
         /// <summary>
+        /// tbModelo control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox tbModelo;
+        
+        /// <summary>
         /// btnAgregar control.
         /// </summary>
         /// <remarks>
-        /// AutoDealer-generated field.
+        /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnAgregar;
@@ -70,7 +70,7 @@ namespace AutoDealer.ControlPanel {
         /// gvModelos control.
         /// </summary>
         /// <remarks>
-        /// AutoDealer-generated field.
+        /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.GridView gvModelos;
@@ -79,7 +79,7 @@ namespace AutoDealer.ControlPanel {
         /// Msg control.
         /// </summary>
         /// <remarks>
-        /// AutoDealer-generated field.
+        /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label Msg;
@@ -88,7 +88,7 @@ namespace AutoDealer.ControlPanel {
         /// btnNuevo control.
         /// </summary>
         /// <remarks>
-        /// AutoDealer-generated field.
+        /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnNuevo;
@@ -97,7 +97,7 @@ namespace AutoDealer.ControlPanel {
         /// btnCancelar control.
         /// </summary>
         /// <remarks>
-        /// AutoDealer-generated field.
+        /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnCancelar;
@@ -106,7 +106,7 @@ namespace AutoDealer.ControlPanel {
         /// btnRegistrar control.
         /// </summary>
         /// <remarks>
-        /// AutoDealer-generated field.
+        /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnRegistrar;
@@ -115,7 +115,7 @@ namespace AutoDealer.ControlPanel {
         /// btnModificar control.
         /// </summary>
         /// <remarks>
-        /// AutoDealer-generated field.
+        /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnModificar;
@@ -124,7 +124,7 @@ namespace AutoDealer.ControlPanel {
         /// btnEliminar control.
         /// </summary>
         /// <remarks>
-        /// AutoDealer-generated field.
+        /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnEliminar;

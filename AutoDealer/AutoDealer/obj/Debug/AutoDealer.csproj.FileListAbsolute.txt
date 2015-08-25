@@ -1,1 +1,11 @@
 C:\Users\usuario\Documents\Visual Studio 2013\Projects\AutoDealer\Auto\obj\Debug\AutoDealer.csprojResolveAssemblyReference.cache
+C:\Users\usuario\Documents\Visual Studio 2013\Projects\AutoDealer\AutoDealer\bin\AutoDealer.dll.config
+C:\Users\usuario\Documents\Visual Studio 2013\Projects\AutoDealer\AutoDealer\bin\AutoDealer.dll
+C:\Users\usuario\Documents\Visual Studio 2013\Projects\AutoDealer\AutoDealer\bin\AutoDealer.pdb
+C:\Users\usuario\Documents\Visual Studio 2013\Projects\AutoDealer\AutoDealer\bin\BLL.dll
+C:\Users\usuario\Documents\Visual Studio 2013\Projects\AutoDealer\AutoDealer\bin\DAL.dll
+C:\Users\usuario\Documents\Visual Studio 2013\Projects\AutoDealer\AutoDealer\bin\BLL.pdb
+C:\Users\usuario\Documents\Visual Studio 2013\Projects\AutoDealer\AutoDealer\bin\DAL.pdb
+C:\Users\usuario\Documents\Visual Studio 2013\Projects\AutoDealer\AutoDealer\obj\Debug\AutoDealer.csprojResolveAssemblyReference.cache
+C:\Users\usuario\Documents\Visual Studio 2013\Projects\AutoDealer\AutoDealer\obj\Debug\AutoDealer.dll
+C:\Users\usuario\Documents\Visual Studio 2013\Projects\AutoDealer\AutoDealer\obj\Debug\AutoDealer.pdb

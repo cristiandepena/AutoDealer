@@ -4,3 +4,9 @@ C:\Users\usuario\documents\visual studio 2013\Projects\AutoRent\DAL\obj\Debug\DA
 C:\Users\usuario\documents\visual studio 2013\Projects\AutoRent\DAL\obj\Debug\DAL.csproj.GenerateResource.Cache
 C:\Users\usuario\documents\visual studio 2013\Projects\AutoRent\DAL\obj\Debug\DAL.dll
 C:\Users\usuario\documents\visual studio 2013\Projects\AutoRent\DAL\obj\Debug\DAL.pdb
+C:\Users\usuario\Documents\Visual Studio 2013\Projects\AutoDealer\DAL\bin\Debug\DAL.dll
+C:\Users\usuario\Documents\Visual Studio 2013\Projects\AutoDealer\DAL\bin\Debug\DAL.pdb
+C:\Users\usuario\Documents\Visual Studio 2013\Projects\AutoDealer\DAL\obj\Debug\DAL.Properties.Resources.resources
+C:\Users\usuario\Documents\Visual Studio 2013\Projects\AutoDealer\DAL\obj\Debug\DAL.csproj.GenerateResource.Cache
+C:\Users\usuario\Documents\Visual Studio 2013\Projects\AutoDealer\DAL\obj\Debug\DAL.dll
+C:\Users\usuario\Documents\Visual Studio 2013\Projects\AutoDealer\DAL\obj\Debug\DAL.pdb

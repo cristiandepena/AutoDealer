@@ -61,12 +61,14 @@
     <Content Include="Bootstrap3.3.5\css\bootstrap-theme.min.css" />
     <Content Include="Bootstrap3.3.5\css\bootstrap.css" />
     <Content Include="Bootstrap3.3.5\css\bootstrap.min.css" />
+    <Content Include="Bootstrap3.3.5\css\sidebar.css" />
     <Content Include="Bootstrap3.3.5\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Bootstrap3.3.5\js\bootstrap.js" />
     <Content Include="Bootstrap3.3.5\js\bootstrap.min.js" />
     <Content Include="Bootstrap3.3.5\js\jquery-1.11.3.min.js" />
     <Content Include="Bootstrap3.3.5\js\npm.js" />
     <Content Include="ControlPanel\Login.aspx" />
+    <Content Include="ControlPanel\Prueba.aspx" />
     <Content Include="ControlPanel\rColor.aspx" />
     <Content Include="ControlPanel\rCombustibles.aspx" />
     <Content Include="ControlPanel\rMarca.aspx" />
@@ -80,12 +82,26 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ControlPanel\CPMaster.Master.cs">
+      <DependentUpon>CPMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlPanel\CPMaster.Master.designer.cs">
+      <DependentUpon>CPMaster.Master</DependentUpon>
+    </Compile>
     <Compile Include="ControlPanel\Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="ControlPanel\Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlPanel\Prueba.aspx.cs">
+      <DependentUpon>Prueba.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlPanel\Prueba.aspx.designer.cs">
+      <DependentUpon>Prueba.aspx</DependentUpon>
     </Compile>
     <Compile Include="ControlPanel\rColor.aspx.cs">
       <DependentUpon>rColor.aspx</DependentUpon>
@@ -174,6 +190,7 @@
     <Content Include="Bootstrap3.3.5\fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="Bootstrap3.3.5\fonts\glyphicons-halflings-regular.woff" />
     <Content Include="Bootstrap3.3.5\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="ControlPanel\CPMaster.Master" />
     <None Include="Properties\PublishProfiles\Prueba.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

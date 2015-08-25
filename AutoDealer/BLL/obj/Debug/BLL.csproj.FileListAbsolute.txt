@@ -7,3 +7,12 @@ C:\Users\usuario\documents\visual studio 2013\Projects\AutoRent\BLL\obj\Debug\BL
 C:\Users\usuario\documents\visual studio 2013\Projects\AutoRent\BLL\obj\Debug\BLL.csproj.GenerateResource.Cache
 C:\Users\usuario\documents\visual studio 2013\Projects\AutoRent\BLL\obj\Debug\BLL.dll
 C:\Users\usuario\documents\visual studio 2013\Projects\AutoRent\BLL\obj\Debug\BLL.pdb
+C:\Users\usuario\Documents\Visual Studio 2013\Projects\AutoDealer\BLL\bin\Debug\BLL.dll
+C:\Users\usuario\Documents\Visual Studio 2013\Projects\AutoDealer\BLL\bin\Debug\BLL.pdb
+C:\Users\usuario\Documents\Visual Studio 2013\Projects\AutoDealer\BLL\bin\Debug\DAL.dll
+C:\Users\usuario\Documents\Visual Studio 2013\Projects\AutoDealer\BLL\bin\Debug\DAL.pdb
+C:\Users\usuario\Documents\Visual Studio 2013\Projects\AutoDealer\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+C:\Users\usuario\Documents\Visual Studio 2013\Projects\AutoDealer\BLL\obj\Debug\BLL.Properties.Resources.resources
+C:\Users\usuario\Documents\Visual Studio 2013\Projects\AutoDealer\BLL\obj\Debug\BLL.csproj.GenerateResource.Cache
+C:\Users\usuario\Documents\Visual Studio 2013\Projects\AutoDealer\BLL\obj\Debug\BLL.dll
+C:\Users\usuario\Documents\Visual Studio 2013\Projects\AutoDealer\BLL\obj\Debug\BLL.pdb

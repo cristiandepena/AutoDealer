@@ -16,7 +16,7 @@ namespace AutoDealer.ControlPanel {
         /// form1 control.
         /// </summary>
         /// <remarks>
-        /// AutoDealer-generated field.
+        /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
@@ -25,7 +25,7 @@ namespace AutoDealer.ControlPanel {
         /// tbUsuario control.
         /// </summary>
         /// <remarks>
-        /// AutoDealer-generated field.
+        /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox tbUsuario;
@@ -34,7 +34,7 @@ namespace AutoDealer.ControlPanel {
         /// RequiredFieldValidator2 control.
         /// </summary>
         /// <remarks>
-        /// AutoDealer-generated field.
+        /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator2;
@@ -43,7 +43,7 @@ namespace AutoDealer.ControlPanel {
         /// tbContrasena control.
         /// </summary>
         /// <remarks>
-        /// AutoDealer-generated field.
+        /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox tbContrasena;
@@ -52,7 +52,7 @@ namespace AutoDealer.ControlPanel {
         /// RequiredFieldValidator1 control.
         /// </summary>
         /// <remarks>
-        /// AutoDealer-generated field.
+        /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator1;
@@ -61,7 +61,7 @@ namespace AutoDealer.ControlPanel {
         /// Persist control.
         /// </summary>
         /// <remarks>
-        /// AutoDealer-generated field.
+        /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.CheckBox Persist;
@@ -70,7 +70,7 @@ namespace AutoDealer.ControlPanel {
         /// btnAceptar control.
         /// </summary>
         /// <remarks>
-        /// AutoDealer-generated field.
+        /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnAceptar;
@@ -79,7 +79,7 @@ namespace AutoDealer.ControlPanel {
         /// Msg control.
         /// </summary>
         /// <remarks>
-        /// AutoDealer-generated field.
+        /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label Msg;

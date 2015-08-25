@@ -42,14 +42,17 @@ namespace AutoDealer.ControlPanel
         protected void btnRegistrar_Click(object sender, EventArgs e)
         {
             marca = new Marca();
+            marca.Descripcion = tbDescripcion.Text;
 
-            if (tbDescripcion.Text != string.Empty)
+            if (tbDescripcion.Text == string.Empty)
             {
                 Msg.Text = "Tiene que digitar un modelo...";
             }
-            else
+            else if(Session["marca"] != null)
             {
+                marca = (Marca)Session["marca"];
                 marca.insertar();
+                Msg.Text = "Exito!";
             }
         }
 
@@ -76,7 +79,7 @@ namespace AutoDealer.ControlPanel
                 if (marca.Buscar(id))
                 {
                     id = marca.IdMarca;
-                    tbDescripcion.Text = marca.DetalleModelo;
+                    tbDescripcion.Text = marca.Descripcion;
                 }
                 else if(!marca.Buscar(id))
                 {
@@ -121,13 +124,13 @@ namespace AutoDealer.ControlPanel
                 marca = (Marca)Session["marca"];
             }
 
-            marca.AgregarModelo(IdMarca, tbDescripcion.Text);
+            marca.AgregarModelo(tbModelo.Text);
 
             gvModelos.DataSource = marca.modelos;
             gvModelos.DataBind();
 
             Session["marca"] = marca;
-            tbDescripcion.Text = "";
+            tbModelo.Text = "";
             Msg.Text = "Total: "+ gvModelos.Rows.Count.ToString();
         }
     }

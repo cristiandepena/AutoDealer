@@ -15,8 +15,8 @@
             <tr>
                 <th>Marca</th>
                 <td>
-                    <asp:Label ID="lbModelo" runat="server" Text="Modelo"></asp:Label>
                     <asp:TextBox ID="tbDescripcion" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="tbModelo" runat="server"></asp:TextBox>
                     <asp:Button ID="btnAgregar" class="btn btn-success" runat="server" Text="Agregar" OnClick="btnAgregar_Click" />
 
                 </td>

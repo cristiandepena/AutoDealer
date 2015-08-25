@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="AutoDealer.ControlPanel.Login" MasterPageFile="~/ControlPanel/Master.Master"%>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="AutoDealer.ControlPanel.Login" MasterPageFile="~/ControlPanel/CPMaster.Master"%>
 
 <asp:Content ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <form id="form1" runat="server">

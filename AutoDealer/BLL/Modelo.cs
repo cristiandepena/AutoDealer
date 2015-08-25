@@ -16,9 +16,8 @@ namespace BLL
         public Conexion con;
         public string comando;
 
-        public Modelo(int IdMarca, string Descripcion)
+        public Modelo(string Descripcion)
         {
-            this.IdMarca = 0;
             this.Descripcion = Descripcion;
         }
 
